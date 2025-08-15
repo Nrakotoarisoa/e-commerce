@@ -27,6 +27,7 @@ function ProductList() {
     const { cartList } = useCart();
     const [ prevLength, setPrevLength ] = useState(cartList.length);
     const firstRender = React.useRef(true);
+
     const [ product, setProduct ] = useState([
         {
             id: 1,
@@ -114,6 +115,7 @@ function ProductList() {
     const [ filteredProducts, setFilteredProducts ] = useState([...product]);
 
     useEffect(() => filterPerPrice(value), [value]);
+
     useEffect(() => {
         if (firstRender.current) {
             firstRender.current = false;
@@ -176,7 +178,7 @@ function ProductList() {
                 <Box sx={{
                         display: "flex", flexDirection: 'column', justifyContent: 'space-around',flexGrow: 1, width: `calc(100% - ${drawerWidth}px)`, 
                         height: 100, position: "fixed", zIndex: 1, left: 290, backgroundColor: '#fff', 
-                        paddingTop: 2}}>
+                        paddingTop: 3}}>
                     <Button 
                         color='dark'
                         variant="outlined"

@@ -7,9 +7,14 @@ import Typography from '@mui/material/Typography';
 import Rating from '@mui/material/Rating';
 import ProductDialog from './ProductDialog';
 import Box from '@mui/material/Box';
+import { useEffect } from 'react';
 
 export default function ProductCard({ product }) {
   const [value, setValue] = React.useState(0);
+
+  useEffect(() => {
+        localStorage.setItem("Rating", value);
+        }, [value]);
 
   return (
     <Card

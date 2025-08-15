@@ -8,7 +8,9 @@ export const CartProvider = ({ children }) => {
   const [ cartList, setCartList ] = useState([]);
 
   const addToCart = (item) => {
-    setCartList((prevCart) => [...prevCart, item]);
+    cartList.some(cartItem => cartItem.id === item.id)
+      ? setCartList((prevCart) => prevCart.map(cartItem => cartItem.id === item.id ? { ...cartItem, quantite: Number(cartItem.quantite) + Number(item.quantite)} : cartItem))
+      : setCartList((prevCart) => [...prevCart, item]);
   };
 
   const removeFromCart = (itemId) => {

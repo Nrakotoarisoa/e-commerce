@@ -16,6 +16,7 @@
     "@mui/material": "^7.1.1",
     "@toolpad/core": "^0.16.0",
     "base-ui": "^0.0.294",
+    "framer-motion": "^12.23.12",
     "notistack": "^3.0.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

@@ -137,37 +137,37 @@ export default function ProductDialog({ item }) {
                     </form>
                 </DialogContent>
                 <DialogActions>
-                <Button 
-                    onClick={handleClose}
-                    variant="outlined"
-                    color="primary"
-                    disableRipple
-                    sx={{
-                        textTransform: 'none',
-                        borderRadius: 2,
-                        fontWeight: 500,
-                        '&:focus': { outline: 'none' },
-                    }}
-                >
-                    Annuler
-                </Button>
-                <Button
-                    disabled={!quantite || quantite === 0}
-                    type="submit"
-                    form="subscription-form"
-                    variant="contained"
-                    color="primary"
-                    disableRipple
-                    startIcon={<AddShoppingCartIcon />}
-                    sx={{
-                        textTransform: 'none',
-                        borderRadius: 2,
-                        fontWeight: 500,
-                        '&:focus': { outline: 'none' },
-                    }}
-                >
-                    Ajouter au panier
-                </Button>
+                    <Button 
+                        onClick={handleClose}
+                        variant="outlined"
+                        color="primary"
+                        disableRipple
+                        sx={{
+                            textTransform: 'none',
+                            borderRadius: 2,
+                            fontWeight: 500,
+                            '&:focus': { outline: 'none' },
+                        }}
+                    >
+                        Annuler
+                    </Button>
+                    <Button
+                        disabled={!quantite || quantite === 0}
+                        type="submit"
+                        form="subscription-form"
+                        variant="contained"
+                        color="primary"
+                        disableRipple
+                        startIcon={<AddShoppingCartIcon />}
+                        sx={{
+                            textTransform: 'none',
+                            borderRadius: 2,
+                            fontWeight: 500,
+                            '&:focus': { outline: 'none' },
+                        }}
+                    >
+                        Ajouter au panier
+                    </Button>
                 </DialogActions>
             </Dialog>
         </React.Fragment>
