@@ -8,6 +8,7 @@ import MuiAlert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 import CloseIcon from '@mui/icons-material/Close';
 import PaimentDialog from "./PaimentDialog";
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 
 export default function Cart() {
     const { cartList, removeFromCart } = useCart();
@@ -56,22 +57,23 @@ export default function Cart() {
             </Snackbar>
             <Box sx={{ display: 'flex', flexDirection: 'row', padding: 2, gap: 2 }}>
                 <Box sx={{ padding: 2, width: '90vh', marginRight: 1, minHeight: '50vh' }}>
-                    <Typography
-                        variant="h4"
-                        gutterBottom
-                        sx={{
-                            borderBottom: '3px solid',
-                            borderColor: 'primary.main',
-                            paddingBottom: '12px',
-                            fontWeight: 'semibold',
-                            letterSpacing: '0.1em',
-                            textTransform: 'uppercase',
-                            color: 'text.primary',
-                            mb: 3,
-                        }}
-                    >
-                        MON PANIER
-                    </Typography>
+                    <Box sx={{ display: 'flex', gap: 1, borderBottom: '3px solid', borderColor: 'primary.main', height: 42, mb: 2 }}>
+                        <ShoppingCartCheckoutIcon fontSize="large" color="primary" />
+                        <Typography
+                            variant="h5"
+                            gutterBottom
+                            sx={{
+                                fontWeight: 600,
+                                letterSpacing: '0.1em',
+                                textTransform: 'uppercase',
+                                color: 'text.primary',
+                                display: "flex",
+                                alignItems: 'center'
+                            }}
+                        >
+                            MON PANIER
+                        </Typography>
+                    </Box>
                     {cartList.length === 0 ? (
                         <Typography variant="h6" color="text.secondary">
                             Aucune article.
@@ -181,17 +183,16 @@ export default function Cart() {
                         padding: 2, 
                         height: '50vh', 
                         marginLeft: '52%',
-                        marginTop: 2,    
                     }}
                 >
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         gutterBottom
                         sx={{
                             borderBottom: '3px solid',
                             borderColor: 'primary.main',
                             paddingBottom: '12px',
-                            fontWeight: 'semibold',
+                            fontWeight: 600,
                             letterSpacing: '0.1em',
                             textTransform: 'uppercase',
                             color: 'text.primary',
@@ -215,10 +216,10 @@ export default function Cart() {
                         <Typography variant="h6" color="text.primary" sx={{ marginTop: 2 }}>
                             TVA
                         </Typography>
-                        <TextField variant="standard" fullWidth label="Adresse de livraison" sx={{ marginTop: 2, mb: 2 }} />
+                        <TextField variant="standard" fullWidth label="Adresse de livraison" required sx={{ marginTop: 2, mb: 2 }} />
                         <PaimentDialog />
                     </form>
-                    <Box sx={{ display: 'flex', marginTop: 2 }}>
+                    <Box sx={{ display: 'flex', marginTop: 3 }}>
                         <Typography>
                             NOUS ACCEPTONS:
                         </Typography>
@@ -277,7 +278,7 @@ export default function Cart() {
                             />
                         </Box>
                     </Box>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 2 }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 3 }}>
                         <Typography variant="body2" color="text.secondary">
                             * Livraison gratuite pour les commandes de plus de 50$.
                         </Typography>

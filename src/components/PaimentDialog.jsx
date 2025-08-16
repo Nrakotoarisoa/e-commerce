@@ -194,52 +194,9 @@ export default function PaimentDialog() {
             component="form"
             sx={{ m: 1, width: '100%' }}
         >
-            <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-                <TextField variant='outlined' label="Nom figurant sur la carte" sx={{ mb: 1 }} />
-                <TextField variant='outlined' label="Numéro sur la carte" sx={{ mb: 1 }}/>
-            </Box>
-            <TextField variant='outlined' label="MM/AA" sx={{ width: '49.5%', mr: 1}} />
-            <TextField variant='outlined' label="CVV" sx={{ width: '49.5%'}}/>
-        </Box>,
-        <Box>
-            <Box component='img' src="src/assets/paypal.png" 
-                sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: 1,
-                    p: 1.5,
-                    border: "1px solid",
-                    borderColor: "divider",
-                    borderRadius: 2,
-                    bgcolor: "background.paper",
-                    boxShadow: 1,width: 20, height: 15, p: 1
-                }}
-            />
-            <CircularProgress color="grey.500" />
-            <Typography variant="body1" sx={{ mb: 2 }}>
-                                Continuez à ajouter votre compte PayPal
-                Revenez sur PayPal pour continuer à l’ajouter comme moyen de paiement.
-            </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'end', mb: 2, width: '100%' }}>
-                <Button
-                    variant="contained"
-                    color="primary"
-                    disableRipple
-                    sx={{
-                        textTransform: 'none',
-                        borderRadius: 2,
-                        fontWeight: 500,
-                        '&:focus': { outline: 'none' },
-                    }}
-                >
-                    Revenir à Paypal
-                </Button>
-            </Box>
-        </Box>,
-        <Box>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 ,width: '100%', height: 15 }}>
-                <Box component="img" src="src/assets/bitcoin.png"
+            <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
+                <Typography sx={{ width: '95%' }}>Informations de la carte</Typography>
+                <Box component="img" src="src/assets/carte.png" 
                     sx={{
                         display: "flex",
                         alignItems: "center",
@@ -252,6 +209,67 @@ export default function PaimentDialog() {
                         boxShadow: 1,width: 20, height: 15, p: 1
                     }}
                 />
+                <Box component="img" src="src/assets/visa.png" 
+                    sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        p: 1.5,
+                        border: "1px solid",
+                        borderColor: "divider",
+                        borderRadius: 2,
+                        bgcolor: "background.paper",
+                        boxShadow: 1,width: 20, height: 15, p: 1
+                    }}
+                />
+            </Box>
+            
+            <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+                <TextField variant='outlined' label="Nom figurant sur la carte" sx={{ mb: 1 }} />
+                <TextField variant='outlined' label="Numéro sur la carte" sx={{ mb: 1 }}/>
+            </Box>
+            <TextField variant='outlined' label="MM/AA" sx={{ width: '49.5%', mr: 1}} />
+            <TextField variant='outlined' label="CVV" sx={{ width: '49.5%'}}/>
+        </Box>,
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <Box component='img' src="src/assets/paypal.png" 
+                sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 1,
+                    p: 1.5,
+                    border: "1px solid",
+                    borderColor: "divider",
+                    borderRadius: 2,
+                    bgcolor: "background.paper",
+                    boxShadow: 1,width: 20, height: 15, p: 1, mb: 1
+                }}
+            />
+            <CircularProgress color="grey.500" size="20px" />
+            <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                Vous serez redirigé vers le site web de Paypal
+            </Typography>
+            <Typography variant='body2' sx={{ mb: 2, color: "text.secondary" }}>
+                Revenez sur PayPal pour continuer à l’ajouter comme moyen de paiement.
+            </Typography>
+        </Box>,
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 2 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 ,width: '100%', height: 15 }}>
+                <Box component="img" src="src/assets/bitcoin.png"
+                    sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        p: 1.5,
+                        border: "1px solid",
+                        borderColor: "divider",
+                        borderRadius: 2,
+                        bgcolor: "background.paper",
+                        boxShadow: 1,width: 20, height: 15, p: 1, mr: 1
+                    }}
+                />
+                <Typography>Bitcoin</Typography>
             </Box>
             <TextField variant='outlined' label='Votre adresse Bitcoin' fullWidth/>
         </Box>
@@ -276,6 +294,7 @@ export default function PaimentDialog() {
                 onClick={handleClickOpen}
                 variant="contained"
                 color="success"
+                disabled={cartList.length === 0}
                 disableRipple
                 sx={{
                     textTransform: 'none',

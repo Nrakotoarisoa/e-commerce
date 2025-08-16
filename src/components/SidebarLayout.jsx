@@ -12,7 +12,7 @@ const Sidebar = () => {
   const navItems = [
     { text: 'Produits', icon: <DashboardIcon />, path: '/' },
     { text: 'Paniers', icon: <ShoppingCartIcon />, path: '/panier' },
-    { text: 'Support', icon: <BarChartIcon />, path: '/sales' },
+    { text: 'Support', icon: <BarChartIcon />, path: '/support' },
     { text: 'FAQ', icon: <BarChartIcon />, path: '/faq' },
   ];
 
