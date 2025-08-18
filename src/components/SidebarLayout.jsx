@@ -1,18 +1,17 @@
 import { Drawer, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
-import { Dashboard as DashboardIcon, ShoppingCart as ShoppingCartIcon, BarChart as BarChartIcon, Height } from '@mui/icons-material';
+import { Dashboard as DashboardIcon, ShoppingCart as ShoppingCartIcon, BarChart as BarChartIcon } from '@mui/icons-material';
 import { NavLink } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
-
+import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 
 const Sidebar = () => {
 
   const navItems = [
     { text: 'Produits', icon: <DashboardIcon />, path: '/' },
     { text: 'Paniers', icon: <ShoppingCartIcon />, path: '/panier' },
-    { text: 'Support', icon: <BarChartIcon />, path: '/support' },
+    { text: 'Support', icon: <ContactSupportIcon />, path: '/support' },
     { text: 'FAQ', icon: <BarChartIcon />, path: '/faq' },
   ];
 

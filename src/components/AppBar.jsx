@@ -153,10 +153,13 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed"  color='transparent' elevation={0} sx={{ 
+        <AppBar position="fixed"  color='#ffffff' elevation={0} 
+          sx={{ 
             width: `calc(100% - ${drawerWidth}px + 25px)`,
-            borderBottom: '1px solid #ddd'
-        }}>
+            borderBottom: '1px solid #ddd',
+            backgroundColor: "#ffffff"
+          }}
+        >
             <Toolbar>
                 <Search sx={{border: '1px solid #ddd'}}>
                     <SearchIconWrapper>

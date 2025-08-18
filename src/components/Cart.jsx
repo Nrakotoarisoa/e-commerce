@@ -55,7 +55,7 @@ export default function Cart() {
                     Retiré du panier !
                 </Alert>
             </Snackbar>
-            <Box sx={{ display: 'flex', flexDirection: 'row', padding: 2, gap: 2 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', padding: 2, gap: 2, marginTop: 8 }}>
                 <Box sx={{ padding: 2, width: '90vh', marginRight: 1, minHeight: '50vh' }}>
                     <Box sx={{ display: 'flex', gap: 1, borderBottom: '3px solid', borderColor: 'primary.main', height: 42, mb: 2 }}>
                         <ShoppingCartCheckoutIcon fontSize="large" color="primary" />
@@ -216,7 +216,7 @@ export default function Cart() {
                         <Typography variant="h6" color="text.primary" sx={{ marginTop: 2 }}>
                             TVA
                         </Typography>
-                        <TextField variant="standard" fullWidth label="Adresse de livraison" required sx={{ marginTop: 2, mb: 2 }} />
+                        <TextField variant="standard" fullWidth label="Adresse de livraison" sx={{ marginTop: 2, mb: 2 }} />
                         <PaimentDialog />
                     </form>
                     <Box sx={{ display: 'flex', marginTop: 3 }}>

@@ -7,7 +7,7 @@ const DashboardLayout = ({ children }) => {
     <Box sx={{ height: '100vh' }}>
         <PrimarySearchAppBar />
         <Sidebar />
-        <Box component="main" sx={{ flexGrow: 1, p: 3, pt: 0, marginTop: 8, marginLeft: 30}}>
+        <Box component="main" sx={{ flexGrow: 1, p: 3, pt: 0, marginTop: 8, marginLeft: 30 }}>
             {children} 
         </Box>
     </Box>

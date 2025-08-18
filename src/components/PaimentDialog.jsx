@@ -75,6 +75,7 @@ export default function PaimentDialog() {
                     sx={{ 
                         display: 'flex', 
                         gap: 1,
+                        padding: 1,
                         borderRadius: 2,
                         "&:hover": {
                                 bgcolor: "grey.100"
@@ -92,7 +93,7 @@ export default function PaimentDialog() {
                                 borderColor: "divider",
                                 borderRadius: 2,
                                 bgcolor: "background.paper",
-                                boxShadow: 1,width: 20, height: 15, p: 1
+                                boxShadow: 1,width: 20, height: 15
                             }}
                         />
                         <Typography sx={{ p: 1, pl: 0 }}>Paypal</Typography>
@@ -104,6 +105,7 @@ export default function PaimentDialog() {
                     sx={{ 
                         display: 'flex', 
                         gap: 1,
+                        padding: 1,
                         borderRadius: 2,
                         "&:hover": {
                                 bgcolor: "grey.100"
@@ -121,7 +123,7 @@ export default function PaimentDialog() {
                                 borderColor: "divider",
                                 borderRadius: 2,
                                 bgcolor: "background.paper",
-                                boxShadow: 1,width: 20, height: 15, p: 1
+                                boxShadow: 1,width: 20, height: 15
                             }}
                         />
                         <Typography sx={{ p: 1, pl: 0 }}>Mastercard</Typography>
@@ -133,6 +135,7 @@ export default function PaimentDialog() {
                     sx={{ 
                         display: 'flex', 
                         gap: 1,
+                        padding: 1,
                         borderRadius: 2,
                         "&:hover": {
                                 bgcolor: "grey.100"
@@ -150,7 +153,7 @@ export default function PaimentDialog() {
                                 borderColor: "divider",
                                 borderRadius: 2,
                                 bgcolor: "background.paper",
-                                boxShadow: 1,width: 20, height: 15, p: 1
+                                boxShadow: 1,width: 20, height: 15
                             }}
                         />
                         <Typography sx={{ p: 1, pl: 0 }}>Visa</Typography>
@@ -163,6 +166,7 @@ export default function PaimentDialog() {
                         mb: 2,
                         display: 'flex', 
                         gap: 1,
+                        padding: 1,
                         borderRadius: 2,
                         "&:hover": {
                                 bgcolor: "grey.100"
@@ -180,7 +184,7 @@ export default function PaimentDialog() {
                                 borderColor: "divider",
                                 borderRadius: 2,
                                 bgcolor: "background.paper",
-                                boxShadow: 1,width: 20, height: 15, p: 1
+                                boxShadow: 1,width: 20, height: 15
                             }}
                         />
                         <Typography sx={{ p: 1, pl: 0 }}>Bitcoin</Typography>
@@ -206,7 +210,7 @@ export default function PaimentDialog() {
                         borderColor: "divider",
                         borderRadius: 2,
                         bgcolor: "background.paper",
-                        boxShadow: 1,width: 20, height: 15, p: 1
+                        boxShadow: 1,width: 20, height: 15,
                     }}
                 />
                 <Box component="img" src="src/assets/visa.png" 
@@ -219,7 +223,7 @@ export default function PaimentDialog() {
                         borderColor: "divider",
                         borderRadius: 2,
                         bgcolor: "background.paper",
-                        boxShadow: 1,width: 20, height: 15, p: 1
+                        boxShadow: 1,width: 20, height: 15
                     }}
                 />
             </Box>
@@ -243,7 +247,7 @@ export default function PaimentDialog() {
                     borderColor: "divider",
                     borderRadius: 2,
                     bgcolor: "background.paper",
-                    boxShadow: 1,width: 20, height: 15, p: 1, mb: 1
+                    boxShadow: 1,width: 20, height: 15, mb: 1
                 }}
             />
             <CircularProgress color="grey.500" size="20px" />
@@ -266,7 +270,7 @@ export default function PaimentDialog() {
                         borderColor: "divider",
                         borderRadius: 2,
                         bgcolor: "background.paper",
-                        boxShadow: 1,width: 20, height: 15, p: 1, mr: 1
+                        boxShadow: 1,width: 20, height: 15, mr: 1
                     }}
                 />
                 <Typography>Bitcoin</Typography>
@@ -305,7 +309,7 @@ export default function PaimentDialog() {
                 }}
             >
                 <PaymentsRoundedIcon sx={{ marginRight: 1}}/>
-                Payer
+                Valider les commandes
             </Button>
             <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
                 <DialogTitle

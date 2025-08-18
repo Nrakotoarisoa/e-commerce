@@ -8,9 +8,11 @@ import Rating from '@mui/material/Rating';
 import ProductDialog from './ProductDialog';
 import Box from '@mui/material/Box';
 import { useEffect } from 'react';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function ProductCard({ product }) {
   const [value, setValue] = React.useState(0);
+  const [loading, setLoading] = React.useState(true);
 
   useEffect(() => {
         localStorage.setItem("Rating", value);
@@ -33,17 +35,40 @@ export default function ProductCard({ product }) {
       }}
     >
       <Box sx={{ position: 'relative'}}>
+        { loading && 
+            <Box 
+              sx={{
+                display: loading ? 'flex' : 'none',
+                height: 140,
+                objectFit: 'cover',
+                borderTopLeftRadius: '12px',
+                borderTopRightRadius: '12px',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <CircularProgress 
+                size={20}
+                sx={{ 
+                  top: '50%', 
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                }}
+              />
+            </Box> }
         <CardMedia
           component="img"
           alt={product.nom}
           image={product.image}
+          onLoad={() => setLoading(false)}
           sx={{
+            display: loading ? 'none' : 'block',
             height: 140,
             objectFit: 'cover',
             borderTopLeftRadius: '12px',
             borderTopRightRadius: '12px',
           }}
-        />
+        /> 
         <Box
             sx={{
               position: 'absolute',
