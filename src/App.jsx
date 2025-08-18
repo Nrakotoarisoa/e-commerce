@@ -1,13 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import DashboardLayout from './components/DashboardLayout';
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
-import SupportForm from './components/SupportForm';
-import FAQ from './components/faq';
 import { Suspense, lazy } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 
-const Product = lazy(() => import('./components/ProductList'));
+const ProductList = lazy(() => import('./components/ProductList'));
 const Cart = lazy(() => import('./components/Cart'));
 const SupportForm = lazy(() => import('./components/SupportForm'));
 const FAQ = lazy(() => import('./components/faq'));
