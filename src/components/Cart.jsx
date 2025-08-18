@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useCart } from "./cartContext";
-import { Box, Typography, Button, IconButton, Card, CardMedia } from "@mui/material";
-import { CardContent, CardActions } from "@mui/material";
+import { Box, Typography, IconButton, Card, CardMedia } from "@mui/material";
+import { CardContent } from "@mui/material";
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
 import TextField from '@mui/material/TextField';
 import MuiAlert from '@mui/material/Alert';
@@ -234,7 +234,7 @@ export default function Cart() {
                                     borderColor: "divider",
                                     borderRadius: 2,
                                     bgcolor: "background.paper",
-                                    boxShadow: 1,width: 20, height: 15, p: 1
+                                    boxShadow: 1,width: 20, height: 15, padding: 1
                                 }}
                             />
                             <Box component="img" src="src/assets/carte.png" 
@@ -247,7 +247,7 @@ export default function Cart() {
                                     borderColor: "divider",
                                     borderRadius: 2,
                                     bgcolor: "background.paper",
-                                    boxShadow: 1,width: 20, height: 15, p: 1
+                                    boxShadow: 1,width: 20, height: 15, padding: 1
                                 }}
                             />
                             <Box component="img" src="src/assets/visa.png" 
@@ -260,7 +260,7 @@ export default function Cart() {
                                     borderColor: "divider",
                                     borderRadius: 2,
                                     bgcolor: "background.paper",
-                                    boxShadow: 1,width: 20, height: 15, p: 1
+                                    boxShadow: 1,width: 20, height: 15, padding: 1
                                 }}
                             />
                             <Box component="img" src="src/assets/bitcoin.png"
@@ -273,7 +273,7 @@ export default function Cart() {
                                     borderColor: "divider",
                                     borderRadius: 2,
                                     bgcolor: "background.paper",
-                                    boxShadow: 1,width: 20, height: 15, p: 1
+                                    boxShadow: 1,width: 20, height: 15, padding: 1
                                 }}
                             />
                         </Box>
