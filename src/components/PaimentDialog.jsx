@@ -83,7 +83,7 @@ export default function PaimentDialog() {
                     }}
                 >
                     <Box sx={{ display: 'flex', gap: 1, width: '100%'}}>
-                        <Box component='img' src="src/assets/paypal.png" 
+                        <Box component='img' src="/paypal.png" 
                             sx={{
                                 display: "flex",
                                 alignItems: "center",
@@ -113,7 +113,7 @@ export default function PaimentDialog() {
                     }}
                     >
                     <Box sx={{ display: 'flex', gap: 1, width: '100%'}}>
-                        <Box component="img" src="src/assets/carte.png" 
+                        <Box component="img" src="/carte.png" 
                             sx={{
                                 display: "flex",
                                 alignItems: "center",
@@ -143,7 +143,7 @@ export default function PaimentDialog() {
                     }}
                     >
                     <Box sx={{ display: 'flex', gap: 1, width: '100%'}}>
-                        <Box component="img" src="src/assets/visa.png" 
+                        <Box component="img" src="/visa.png" 
                             sx={{
                                 display: "flex",
                                 alignItems: "center",
@@ -174,7 +174,7 @@ export default function PaimentDialog() {
                     }}
                 >
                     <Box sx={{ display: 'flex', gap: 1, width: '100%'}}>
-                        <Box component="img" src="src/assets/bitcoin.png"
+                        <Box component="img" src="/bitcoin.png"
                             sx={{
                                 display: "flex",
                                 alignItems: "center",
@@ -200,7 +200,7 @@ export default function PaimentDialog() {
         >
             <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
                 <Typography sx={{ width: '95%' }}>Informations de la carte</Typography>
-                <Box component="img" src="src/assets/carte.png" 
+                <Box component="img" src="/carte.png" 
                     sx={{
                         display: "flex",
                         alignItems: "center",
@@ -213,7 +213,7 @@ export default function PaimentDialog() {
                         boxShadow: 1,width: 20, height: 15,
                     }}
                 />
-                <Box component="img" src="src/assets/visa.png" 
+                <Box component="img" src="/visa.png" 
                     sx={{
                         display: "flex",
                         alignItems: "center",
@@ -236,7 +236,7 @@ export default function PaimentDialog() {
             <TextField variant='outlined' label="CVV" sx={{ width: '49.5%'}}/>
         </Box>,
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            <Box component='img' src="src/assets/paypal.png" 
+            <Box component='img' src="/paypal.png" 
                 sx={{
                     display: "flex",
                     alignItems: "center",
@@ -260,7 +260,7 @@ export default function PaimentDialog() {
         </Box>,
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 2 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 ,width: '100%', height: 15 }}>
-                <Box component="img" src="src/assets/bitcoin.png"
+                <Box component="img" src="/bitcoin.png"
                     sx={{
                         display: "flex",
                         alignItems: "center",
