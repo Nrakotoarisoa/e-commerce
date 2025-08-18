@@ -224,7 +224,7 @@ export default function Cart() {
                             NOUS ACCEPTONS:
                         </Typography>
                         <Box sx={{display: 'flex', gap: 1, marginLeft: 1}}>
-                            <Box component='img' src="src/assets/paypal.png" 
+                            <Box component='img' src="/paypal.png" 
                                 sx={{
                                     display: "flex",
                                     alignItems: "center",
@@ -237,7 +237,7 @@ export default function Cart() {
                                     boxShadow: 1,width: 20, height: 15, padding: 1
                                 }}
                             />
-                            <Box component="img" src="src/assets/carte.png" 
+                            <Box component="img" src="/carte.png" 
                                 sx={{
                                     display: "flex",
                                     alignItems: "center",
@@ -250,7 +250,7 @@ export default function Cart() {
                                     boxShadow: 1,width: 20, height: 15, padding: 1
                                 }}
                             />
-                            <Box component="img" src="src/assets/visa.png" 
+                            <Box component="img" src="/visa.png" 
                                 sx={{
                                     display: "flex",
                                     alignItems: "center",
@@ -263,7 +263,7 @@ export default function Cart() {
                                     boxShadow: 1,width: 20, height: 15, padding: 1
                                 }}
                             />
-                            <Box component="img" src="src/assets/bitcoin.png"
+                            <Box component="img" src="/bitcoin.png"
                                 sx={{
                                     display: "flex",
                                     alignItems: "center",
