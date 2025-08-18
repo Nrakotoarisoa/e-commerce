@@ -30,7 +30,7 @@ const Sidebar = () => {
     >
        <Box sx={{height: 64 + 'px', display: 'flexbox', alignContent: 'center'}}>
           <Typography variant='h5' sx={{display: 'flex', justifyContent: 'center'}}>
-                Focus On Rise
+                Sellers
           </Typography>
         </Box>
         <Divider />
