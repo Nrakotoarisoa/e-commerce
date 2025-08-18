@@ -259,7 +259,7 @@ export default function PaimentDialog() {
             </Typography>
         </Box>,
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 2 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 ,width: '100%', height: 15 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 3 ,width: '100%', height: 15 }}>
                 <Box component="img" src="/bitcoin.png"
                     sx={{
                         display: "flex",
