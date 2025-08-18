@@ -34,7 +34,7 @@ function ProductList() {
             nom: "Montre en cuir",
             description: "Montre élégante avec bracelet en cuir véritable, résistante à l’eau.",
             prix: 149.99,
-            image: "https://picsum.photos/id/1050/300/200", 
+            image: "https://unsplash.com/photos/O1_vdzQZwMY/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fG1vbnRyZSUyMGVuJTIwY3VpcnxmcnwwfHx8fDE3NTU1NDAwOTd8MA&force=true&w=640", 
             quantite: 0
         },
         {
@@ -42,7 +42,7 @@ function ProductList() {
             nom: "Sac à dos randonnée",
             description: "Sac à dos imperméable de 30L, idéal pour la randonnée et le voyage.",
             prix: 79.99,
-            image: "https://picsum.photos/id/1018/300/200",
+            image: "https://unsplash.com/photos/9aZ3T1q83CM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8c2FjJTIwJUMzJUEwJTIwZG9zJTIwcmFuZG9ubiVDMyVBOWV8ZnJ8MHx8fHwxNzU1NTQwMzkxfDI&force=true&w=640",
             quantite: 0
         },
         {
@@ -50,7 +50,7 @@ function ProductList() {
             nom: "Chaussures de sport",
             description: "Chaussures légères et respirantes, parfaites pour le running.",
             prix: 89.99,
-            image: "https://picsum.photos/id/21/300/200",
+            image: "https://unsplash.com/photos/wggDZ5mCF8w/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8Y2hhdXNzdXJlJTIwZGUlMjBzcG9ydHxmcnwwfHx8fDE3NTU1NDA0Njd8Mg&force=true&w=640",
             quantite: 0
         },
         {
@@ -58,7 +58,7 @@ function ProductList() {
             nom: "Casque Bluetooth",
             description: "Casque audio sans fil avec réduction active de bruit.",
             prix: 129.99,
-            image: "https://picsum.photos/id/29/300/200",
+            image: "https://unsplash.com/photos/fJrj9fK3uPE/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8N3x8Y2FzcXVlJTIwYmx1ZXRvb3RofGZyfDB8fHx8MTc1NTU0MDUxNHwy&force=true&w=640",
             quantite: 0
         },
         {
@@ -66,7 +66,7 @@ function ProductList() {
             nom: "T-shirt coton bio",
             description: "T-shirt 100% coton biologique, doux et confortable.",
             prix: 25.99,
-            image: "https://picsum.photos/id/1069/300/200", 
+            image: "https://unsplash.com/photos/kYOQsDMF8XA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8dCUyMHNoaXJ0JTIwY290b24lMjBiaW98ZnJ8MHx8fHwxNzU1NTQwNTYxfDI&force=true&w=640", 
             quantite: 0
         },
         {
@@ -74,7 +74,7 @@ function ProductList() {
             nom: "Lunettes de soleil",
             description: "Protection UV400 avec verres polarisés et monture légère.",
             prix: 39.99,
-            image: "https://picsum.photos/id/1021/300/200", 
+            image: "https://unsplash.com/photos/3xtCeUhqZWE/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8bHVuZXR0ZSUyMGRlJTIwc29sZWlsfGZyfDB8fHx8MTc1NTU0MDYxNHwy&force=true&w=640", 
             quantite: 0
         },
         {
@@ -82,7 +82,7 @@ function ProductList() {
             nom: "Bouteille isotherme",
             description: "Bouteille en acier inoxydable, garde au chaud 12h et au froid 24h.",
             prix: 29.99,
-            image: "https://picsum.photos/id/1080/300/200", 
+            image: "https://unsplash.com/photos/W6k29RtBmPA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTd8fGJvdXRlaWxsZSUyMGlzb3RoZXJtZXxmcnwwfHx8fDE3NTU1NDA2ODl8Mg&force=true&w=640", 
             quantite: 0
         },
         {
@@ -90,7 +90,7 @@ function ProductList() {
             nom: "Clavier mécanique RGB",
             description: "Clavier mécanique rétroéclairé, idéal pour le gaming.",
             prix: 99.99,
-            image: "https://picsum.photos/id/25/300/200",
+            image: "https://unsplash.com/photos/spg13bhgt4w/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjZ8fGNsYXZpZXIlMjBtZWNoYW5pcXVlJTIwUkdCfGZyfDB8fHx8MTc1NTU0MDgyNHwy&force=true&w=640",
             quantite: 0
         },
         {
@@ -98,7 +98,7 @@ function ProductList() {
             nom: "Lampe de bureau LED",
             description: "Lampe LED réglable avec fonction de variation d’intensité.",
             prix: 45.0,
-            image: "https://picsum.photos/id/28/300/200",
+            image: "https://unsplash.com/photos/DR_A_zDkPHQ/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDB8fExhbXBlJTIwZGUlMjBidXJlYXUlMjBMRUR8ZnJ8MHx8fHwxNzU1NTQwOTgzfDI&force=true&w=640",
             quantite: 0
         },
         {
@@ -106,7 +106,7 @@ function ProductList() {
             nom: "Tablette Android 10\"",
             description: "Tablette tactile 10 pouces avec écran HD et grande autonomie.",
             prix: 229.99,
-            image: "https://picsum.photos/id/1060/300/200",
+            image: "https://unsplash.com/photos/8pIQwtVytxM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8dGFibGV0dGUlMjBhbmRyb2lkJTIwTEVEJTIwMTAlMjclMjd8ZnJ8MHx8fHwxNzU1NTQxMDc1fDI&force=true&w=640",
             quantite: 0
         }
     ]);

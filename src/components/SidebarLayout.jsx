@@ -29,7 +29,7 @@ const Sidebar = () => {
         anchor="left"
     >
        <Box sx={{height: 64 + 'px', display: 'flexbox', alignContent: 'center'}}>
-          <Typography variant='h5' sx={{display: 'flex', justifyContent: 'center'}}>
+          <Typography variant='h4' sx={{display: 'flex', justifyContent: 'center', fontWeight: '600' }}>
                 Sellers
           </Typography>
         </Box>
